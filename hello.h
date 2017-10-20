@@ -7,7 +7,11 @@ private:
    int id;   //data
 public:  
    void run();   //function
-   void set_id(int);
+   void run(int, int); //overloaded
+   void set_id(int v) {
+      if(v>0)  id = v;
+      else     id = 1;
+   }
 };
 
 #endif  //HELLO_H 

@@ -2,13 +2,18 @@
 #include <iostream>
 using namespace std;
 
-void Hello::set_id(int v)  
-{
-    //check valid args
-    if(v>0)  id = v;
-    else      id = 1;
- }
+
 void Hello::run()  {
    cout<<"Hello "<<id<<endl;
 }
+
+void Hello::run(int l, int c)
+{
+    for(int i = 0; i < l; i++) {
+        for(int j = 0; j < c; j++)
+            cout <<"Hello "<< id << ", ";
+        cout << endl;
+     }
+}
+
 

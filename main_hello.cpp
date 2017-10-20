@@ -6,8 +6,8 @@ int main()
      // declare a local object
      Hello obj;
      // invoke object methods
-      obj.set_id(1); 
-      obj.run();  
+      obj.set_id(2); 
+      obj.run(2,3);  
       // pause
       getchar();
 } // obj is destroyed here. 
